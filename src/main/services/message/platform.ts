@@ -6,7 +6,7 @@
  * @FilePath: /gonxt-client-fe/src/services/message/platform.ts
  */
 
-import { clearAccessToken, setAccessToken } from '../../utils/utils'
+import { clearAccessToken, setAccessToken } from '../../../utils/utils'
 import ClientMessage from './website'
 
 export default class PlatformMessageListener {

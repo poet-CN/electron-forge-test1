@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, type MutableRefObject } from 'react'
-import ClientMessage from '../services/message/website'
+import ClientMessage from '../main/services/message/website'
 
 const App = () => {
     const iframeRef: MutableRefObject<HTMLIFrameElement | null> = useRef(null)

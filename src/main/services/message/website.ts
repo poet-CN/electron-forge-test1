@@ -6,7 +6,7 @@
  * @FilePath: /gonxt-web-fe/src/services/client.ts
  */
 
-import { wsSeqId, clearAccessToken } from '../../utils/utils'
+import { wsSeqId, clearAccessToken } from '../../../utils/utils'
 import PlatformMessageListener from './platform' // 平台级消息监听器
 import CsMessageListener from './cs' // CS消息监听器
 import VaMessageListener from './va' // VA消息监听器
@@ -102,11 +102,6 @@ const ClientMessage: ClientMessageInterface = {
     sendMessageOnce (message) {
         if (!this.iframeContentWindow) {
             return
-        }
-        try {
-            
-        } catch (error) {
-
         }
         this.iframeContentWindow.postMessage(message, '*')
     },

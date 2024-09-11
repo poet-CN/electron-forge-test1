@@ -35,12 +35,13 @@
     "style-loader": "^3.0.0",
     "ts-loader": "^9.2.2",
     "ts-node": "^10.0.0",
-    "typescript": "~4.5.4"
+    "typescript": "~4.5.4",
+    "umi": "^4.3.20"
   },
   "keywords": [],
   "author": {
     "name": "马铭扬",
-    "email": "mamingyang@gonxt.com"
+    "email": "poet_cn@gonxt.com"
   },
   "license": "MIT",
   "dependencies": {
@@ -48,7 +49,6 @@
     "@tsed/logger": "^6.7.5",
     "@tsed/logger-file": "^6.7.5",
     "electron-squirrel-startup": "^1.0.1",
-    "patch-package": "^8.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   }

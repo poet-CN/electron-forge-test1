@@ -2,7 +2,7 @@
 // https://www.electronjs.org/docs/latest/tutorial/process-model#preload-scripts
 
 import { contextBridge, ipcRenderer } from 'electron'
-import type { EventReqUrlKey , ValorantCustomRoomConfig } from './services/valorant/index.d'
+import type { EventReqUrlKey , ValorantCustomRoomConfig } from './services/valorant'
 
 // 瓦罗兰特专用
 contextBridge.exposeInMainWorld('$va', {
