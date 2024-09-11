@@ -30,7 +30,7 @@ const createWindow = (): void => {
     mainWindow.loadURL('http://localhost:8001'); // 你的 UmiJS 开发服务器地址
   } else {
     // 在生产模式下，使用构建生成的文件
-    mainWindow.loadFile(path.join(__dirname, '../renderer/main_window/index.html'));
+    mainWindow.loadFile(path.join(__dirname, '../../dist/index.html'));
   }
 
   // Open the DevTools.

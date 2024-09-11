@@ -8,6 +8,9 @@ export default defineConfig({
             component: 'index.tsx',
         },
     ],
-    outputPath: './src/main/umi-build',
+    history: {
+        type: 'hash',
+    },
     npmClient: 'yarn',
+    publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
 })

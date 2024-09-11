@@ -1,3 +1,6 @@
+import fs from 'fs-extra'
+import path from 'path'
+
 import type { ForgeConfig } from '@electron-forge/shared-types';
 import { MakerSquirrel } from '@electron-forge/maker-squirrel';
 import { MakerZIP } from '@electron-forge/maker-zip';
@@ -26,8 +29,6 @@ const config: ForgeConfig = {
         config: rendererConfig,
         entryPoints: [
           {
-            html: './src/main/umi-build/index.html',
-            js: './src/main/renderer.ts',
             name: 'main_window',
             preload: {
               js: './src/main/preload.ts',
@@ -48,6 +49,16 @@ const config: ForgeConfig = {
       [FuseV1Options.OnlyLoadAppFromAsar]: true,
     }),
   ],
+  hooks: {
+    async packageAfterCopy (_, buildPath) {
+      const umiBuildPath = path.join(__dirname, 'dist'); // Umi 构建输出路径
+      const destinationPath = path.join(buildPath, 'dist'); // Electron 打包输出路径
+
+      // 复制 Umi 打包输出文件到 Electron 的输出目录
+      await fs.copy(umiBuildPath, destinationPath);
+      console.log('Umi build files successfully copied to Electron build folder.');
+    }
+  }
 };
 
 export default config;
