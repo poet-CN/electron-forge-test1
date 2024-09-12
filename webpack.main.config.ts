@@ -1,8 +1,10 @@
+import path from 'path'
 import type { Configuration } from 'webpack'
 
 import { rules } from './webpack.rules'
 
 export const mainConfig: Configuration = {
+    mode: 'production',
     /**
    * This is the main entry point for your application, it's the first file
    * that runs in the main process.
@@ -12,6 +14,9 @@ export const mainConfig: Configuration = {
     module: {
         rules,
     },
+    // output: {
+    //     path: path.join(__dirname, 'dist'),
+    // },
     resolve: {
         extensions: ['.js', '.ts', '.jsx', '.tsx', '.css', '.json'],
     },

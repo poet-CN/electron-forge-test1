@@ -13,13 +13,18 @@ module.exports = {
     'directories': {
         'output': 'release',      //打包后文件所在位置
     },
+    files: [
+        '.webpack/**/*',
+        'dist/**/*',
+        'package.json',
+    ],
     // 需要原封不动复制的资源文件，打包后会复制到以resources为基础的文件夹下
-    extraResources: [
+    /*extraResources: [
         {
             from: path.join(__dirname, '../src/public/'),
             to: './',
         },
-    ],
+    ],*/
     protocols: {
         name: 'gonxt-client',
         schemes: [ 'gonxt-client' ],

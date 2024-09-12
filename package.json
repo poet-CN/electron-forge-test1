@@ -3,20 +3,17 @@
     "productName": "GoNxtClient",
     "version": "1.0.0",
     "description": "GoNxt Client",
-    "main": ".webpack/main",
+    "main": ".webpack/x64/main",
     "scripts": {
         "start": "electron-forge start",
         "package": "electron-forge package",
         "make": "electron-forge make",
         "publish": "electron-forge publish",
-        "lint": "eslint --ext .ts,.tsx ."
+        "lint": "eslint --ext .ts,.tsx .",
+        "build": "electron-builder --config ./config/electron-builder.js"
     },
     "devDependencies": {
         "@electron-forge/cli": "^7.4.0",
-        "@electron-forge/maker-deb": "^7.4.0",
-        "@electron-forge/maker-rpm": "^7.4.0",
-        "@electron-forge/maker-squirrel": "^7.4.0",
-        "@electron-forge/maker-zip": "^7.4.0",
         "@electron-forge/plugin-auto-unpack-natives": "^7.4.0",
         "@electron-forge/plugin-fuses": "^7.4.0",
         "@electron-forge/plugin-webpack": "^7.4.0",
@@ -29,6 +26,7 @@
         "@vercel/webpack-asset-relocator-loader": "1.7.3",
         "css-loader": "^6.0.0",
         "electron": "32.0.2",
+        "electron-builder": "^25.0.5",
         "eslint": "^8.0.1",
         "eslint-plugin-import": "^2.25.0",
         "fork-ts-checker-webpack-plugin": "^7.2.13",
