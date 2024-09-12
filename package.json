@@ -1,8 +1,8 @@
 {
-  "name": "my-app",
-  "productName": "my-app",
+  "name": "gonxt-client",
+  "productName": "GoNxt Client",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "GoNxt Client",
   "main": ".webpack/main",
   "scripts": {
     "start": "electron-forge start",

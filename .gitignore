@@ -13,7 +13,6 @@ lerna-debug.log*
 # umi相关的构建文件
 .umi
 .umi-production
-umi-build
 dist
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
