@@ -1,6 +1,6 @@
 {
   "name": "gonxt-client",
-  "productName": "GoNxt Client",
+  "productName": "GoNxtClient",
   "version": "1.0.0",
   "description": "GoNxt Client",
   "main": ".webpack/main",

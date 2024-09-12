@@ -12,9 +12,9 @@ import type { MakerSquirrelConfig } from '@electron-forge/maker-squirrel'
 
 const makerSquirrelConfig: MakerSquirrelConfig = {
     authors: 'GoNxt Frontend Development Team',
-    exe: `gonxt-client-setup-${ projectPackage.version }.exe`,
+    // exe: `GoNxt Client`,
     setupExe: `gonxt-client-setup-${ projectPackage.version }.exe`,
-    setupIcon: path.resolve(__dirname, 'src/assets/build/gonxt-client-icon-mac.icns'),
+    // setupIcon: path.resolve(__dirname, 'src/assets/build/gonxt-client-icon-win.ico'),
 }
 
 export default makerSquirrelConfig

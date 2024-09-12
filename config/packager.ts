@@ -14,8 +14,8 @@ const packagerConfig: ForgePackagerOptions = {
     name: 'GoNxt Client',
     appVersion: '1.0.0',
     buildVersion: '1.0.0',
-    // icon: path.resolve(__dirname, 'src/assets/build/gonxt-client-icon-win.ico'),
-    icon: path.resolve(__dirname, 'src/assets/build/gonxt-client-icon-mac.icns'),
+    icon: path.resolve(__dirname, 'src/assets/build/gonxt-client-icon-win.ico'),
+    // icon: path.resolve(__dirname, 'src/assets/build/gonxt-client-icon-mac.icns'),
     executableName: 'GoNxt Client',
     appBundleId: 'com.gonxt.gonxtclient.desktop',
     /*windowsSign: {
