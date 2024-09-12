@@ -3,14 +3,12 @@
     "productName": "GoNxtClient",
     "version": "1.0.0",
     "description": "GoNxt Client",
-    "main": ".webpack/x64/main",
+    "main": ".webpack/main",
     "scripts": {
         "start": "electron-forge start",
-        "package": "electron-forge package",
-        "make": "electron-forge make",
-        "publish": "electron-forge publish",
-        "lint": "eslint --ext .ts,.tsx .",
-        "build": "electron-builder --config ./config/electron-builder.js"
+        "build": "node ./config/build-client.js -- noconsole",
+        "build-withconsole": "node ./config/build-client.js",
+        "build-noclean": "node ./config/build-client.js -- noconsole noclean"
     },
     "devDependencies": {
         "@electron-forge/cli": "^7.4.0",

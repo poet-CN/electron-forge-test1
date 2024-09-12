@@ -14,9 +14,6 @@ export const mainConfig: Configuration = {
     module: {
         rules,
     },
-    // output: {
-    //     path: path.join(__dirname, 'dist'),
-    // },
     resolve: {
         extensions: ['.js', '.ts', '.jsx', '.tsx', '.css', '.json'],
     },

@@ -33,7 +33,7 @@ module.exports = {
         oneClick: false, // 是否为一键安装
         perMachine: true, // 是否让用户选择为哪个windows账户安装。若为false，则需要选择
         allowToChangeInstallationDirectory: true, // 允许修改安装目录
-        artifactName: 'gonxt-cilent-setup-${version}.${ext}', // 构建安装包的名称
+        artifactName: '${name}-setup-${version}.${ext}', // 构建安装包的名称
         installerIcon: path.join(__dirname, '../src/assets/build/gonxt-client-icon-win.ico'), // 安装包的图标
         uninstallerIcon: path.join(__dirname, '../src/assets/build/gonxt-client-icon-win.ico'), // 卸载程序的图标
         shortcutName: 'GoNxt Client', // 快捷方式名称
